@@ -25,6 +25,8 @@ type RingIntBuffer struct {
 }
  
 
+///добавил логи
+
 func NewRingIntBuffer(size int) *RingIntBuffer {
     return &RingIntBuffer{make([]int, size), -1, size, sync.Mutex{}}
 }
